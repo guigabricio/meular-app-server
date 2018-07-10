@@ -1,0 +1,13 @@
+package com.gabricio.meular.exceptions;
+
+public interface IndexErrorCodeException {
+
+	int SERVICO_JA_CADASTRADO = 10001;
+	int SERVICO_NAO_CADASTRADO = 10002;
+	int NENHuM_SERVICO_CADASTRADO = 10003;
+	int USUARIO_NAO_CADASTRADO = 10004;
+	int USUARIO_JA_CADASTRADO = 10005;
+	int NENHUM_USUARIO_CADASTRADO = 10006;
+	int CAMPO_OBRIGATORIO_NAO_INFORMADO = 10007;
+
+}

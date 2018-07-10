@@ -10,14 +10,20 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.gabricio.meular.dto.ServicoDto;
+import com.gabricio.meular.dto.WrapperDto;
 import com.gabricio.meular.entities.ServicoEntity;
 import com.gabricio.meular.exceptions.MeuLarException;
 import com.gabricio.meular.services.ServicoService;
 
+@RestController
 @RequestMapping(path = "/servicos")
-public class ServicoController extends MyController {
+public class ServicoController {
+	
+	@Autowired
+	WrapperDto wrapperDto;
 
 	@Autowired
 	ServicoService servicosService;
